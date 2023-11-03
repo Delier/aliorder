@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: service-account
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        shared-configs[0]:
+          data-id: all-service.yaml
+  profiles:
+    active: dev
